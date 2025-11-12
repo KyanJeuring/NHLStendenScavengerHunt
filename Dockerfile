@@ -1,20 +1,3 @@
-FROM node:18-alpine
-
-WORKDIR /app
-
-# Install deps
-COPY package.json package-lock.json* ./
-RUN npm install --silent
-
-# Copy project files
-COPY . .
-
-# Expose Vite default port
-ENV PORT=5173
-EXPOSE 5173
-
-# Ensure Vite listens on all interfaces
-ENV HOST=0.0.0.0
-
-CMD ["npm", "run", "dev"]
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:81233b27de8caaf4d07fd92552ae5614b71b4872dfbe22dad5a7c777bbde055b
+size 306

@@ -1,15 +1,3 @@
-{
-  "name": "nhl-stenden-web-application",
-  "private": true,
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vite": "^5.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "^6.14.1"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a98639c8dde748008ea1399628242d9cf0b7ecfc548d98b29efd907f9cb0442
+size 312

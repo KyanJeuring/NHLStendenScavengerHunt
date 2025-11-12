@@ -1,21 +1,3 @@
-version: '3.8'
-services:
-  web:
-    hostname: project_web
-    container_name: project_web
-    build: .
-    ports:
-      - "80:5173"
-      - "5173:5173"
-    volumes:
-      - ./:/app
-      - /app/node_modules
-    environment:
-      - HOST=0.0.0.0
-      - VITE_HOST=0.0.0.0
-      - CHOKIDAR_USEPOLLING=true
-      - CHOKIDAR_INTERVAL=100
-      - FORCE_POLLING=true
-      - TZ=UTC
-    command: ["npm","run","dev"]
-    restart: unless-stopped
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c2fb6f8202b9fec1f9fd6cf7f43c012595660ccf63c3b41582a0c10d51bbcda
+size 458
