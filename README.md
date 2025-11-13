@@ -2,6 +2,19 @@
 
 Introduction
 
+## Git LFS usage
+
+This repository uses Git Large File Storage (Git LFS) for some large or binary assets (currently everything under the `public/` folder). If you plan to work on this project locally, please install and enable Git LFS so those files are fetched correctly.
+
+After cloning the repository, run:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+This ensures LFS objects are downloaded into your working tree. Only files under `public/` are tracked by LFS; normal source files remain regular Git objects.
+
 ## Docker Environment Setup and Run
 
 This repository provides a development Docker environment: a Vite dev server with HMR (Hot Module Replacement). HMR updates changed modules in the running app without a full page reload, giving faster feedback during development. Use the compose commands below to start the development container with live reload.
