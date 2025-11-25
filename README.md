@@ -1,4 +1,4 @@
-# NHL Stenden
+# NHL Stenden Explorer
 
 Introduction
 

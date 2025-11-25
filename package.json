@@ -1,5 +1,5 @@
 {
-  "name": "nhl-stenden-web-application",
+  "name": "nhl-stenden-explorer",
   "private": true,
   "scripts": {
     "dev": "vite --host",
