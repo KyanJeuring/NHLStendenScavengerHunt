@@ -1,0 +1,8 @@
+.faq-card {
+    border-radius: 0.5rem;
+    background-color: rgb(var(--nhl_stenden_corp_blue_20));
+    color: rgb(var(--nhl_stenden_corp_blue));
+    aspect-ratio: 4 / 2;
+    height: 25vh;
+    padding: 1.5rem;
+}
