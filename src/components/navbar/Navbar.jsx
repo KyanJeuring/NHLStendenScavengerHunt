@@ -7,6 +7,7 @@ export default function Navbar() {
         <nav>
             <NavLink to="/" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
             <NavLink to="/page1" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Page 1</NavLink>
+            <NavLink to="/learnMore" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Learn More</NavLink>
         </nav>
     );
 }

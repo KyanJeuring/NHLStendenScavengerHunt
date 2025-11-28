@@ -1,0 +1,30 @@
+.learnMorePage {
+    background-color: #005AA7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learnMoreHeader{
+    margin-inline: 50px;
+}
+
+.tagline {
+    color: white;
+    
+}
+.learnMoreHeader .logo_learnMore {
+    width: 150px;
+    margin-block: 30px;
+}
+
+.learnMorePage .whiteWaves {
+    margin-left: 0;
+}
+
+.whiteWaves {
+    height: 300px;
+}
+
+.learnMoreHeader .tagline{
+    margin-top: 80px;
+}

@@ -40,6 +40,6 @@ body {
     font-family: 'CeraPro_Bold';
 }
 
-section {
+main > section {
     padding: 2rem;
 }
