@@ -1,16 +1,76 @@
-.home {
-    color: rgb(var(--nhl_stenden_corp_red));
-}
-
-.logos {
+.home{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+}
+.home > h1 {
+    color: black;
 }
 
-.logo {
-    width: 200px;
+.address {
+    color: grey;
+}
+
+.postalCode {
+    color: grey;
+}
+
+.description {
+    color: black;
+    margin-block: 2rem;
+}
+
+.link a {
+    color: black;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    font-size: 1.10em;
+}
+
+.campusImage {
+    width: 100%;
+    max-width: 50rem;
+    margin-inline: auto;
     height: auto;
-    margin: 20px 0;
-    fill: red;
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.buttonPulse {
+    display: flex;
+    width: 12rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 2px solid rgb(var(--nhl_stenden_corp_blue));
+    font-family: 'CeraPro';
+    transition: background-color 0.4s, color 0.4s;
+    cursor: pointer;
+    color: rgb(var(--nhl_stenden_corp_blue));
+    text-decoration: none;          
+    background-color: transparent;  
+}
+
+.buttonPulse:hover {
+    background-color: rgb(var(--nhl_stenden_corp_blue));
+    color: white;
+}
+
+.explanationToButton {
+    text-align: center;
+    color: grey;
+    margin-block: 1rem;
+}
+
+.infoAboutHiddenPlaces{
+    text-align: center;
+    margin: 5rem;
+}
+
+.infoAboutHiddenPlaces p{
+    margin: 1rem;
 }
