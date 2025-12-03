@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     box-sizing: border-box;
     padding: 1.5rem;
 }
@@ -63,5 +63,5 @@
 /* ---------------- ARROW ---------------- */
 
 .letsgonav-arrow{
-    width: 30px;
+    width: 3rem;
 }
