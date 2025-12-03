@@ -16,7 +16,9 @@ export default function Home() {
             <img src="/photos/campusEmmenPhoto.webp" alt="NHL Stenden Emmen Campus" className="campusImage"/>
             <Link to="/page1" className="buttonPulse">Start Campus Tour</Link>
             <p className="explanationToButton">Explore our campus at your own pace. Discover facilities, study programs, and key locations. </p>
-            <div className="infoAboutHiddenPlaces">
+            <div className="pixelsCombinationForHomePage">
+                <img src="/pixels/combinationForHomePage.svg" alt="Pixels Combination" className="pixelsCombination"/>
+                <img src="/pixels/triangles.svg" alt="Pixel Triangles" className="pixelTriangles"/>
                 <h2>✨ Hidden Gems of Our Campus — The Most Fascinating Places You Might Overlook</h2>
                 <p className="info">Explore the corners of NHL Stenden that often go unnoticed — but hold the most inspiring stories, innovation, and creativity.</p>
             </div>
