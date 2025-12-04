@@ -1,7 +1,7 @@
 import React from 'react';
 import './learnMore.css';
 import LetsgoNav from '../../components/letsgonav/LetsgoNav';
-
+import LetsgoFooter from '../../components/letsgofooter/LetsgoFooter';
 
 export default function LearnMore() {
     return (
@@ -63,7 +63,9 @@ export default function LearnMore() {
                     link="/kennispoort"
                 />
             </main>
-
+            <footer>
+                  <LetsgoFooter />
+            </footer>
         
 
         </section>
