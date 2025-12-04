@@ -1,16 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './faq.css'
 import FaqCard from '../..//components/faq/FaqCard'
 
 export default function Faq() {
-    const faqData = [
-        {question: "What is NHL Stenden?", answer: "NHL Stenden is a university of applied sciences in the Netherlands."},
-        {question: "How can I apply?", answer: "You can apply through our online application portal."},
-        {question: "What courses are offered?", answer: "We offer a variety of courses in different fields of study."},
-        {question: "Where is the campus located?", answer: "Our main campus is located in Leeuwarden."},
-        {question: "What are the tuition fees?", answer: "Tuition fees vary depending on the program."},
-        {question: "Are there scholarships available?", answer: "Yes, we offer several scholarships for eligible students."},
-    ]
+    const [faqData, setFaqData] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+
+    useEffect(() => {
+        let mounted = true
+        setLoading(true)
+        fetch(`${API_URL}/api/faq`)
+            .then((res) => {
+                if (!res.ok) throw new Error('Network response was not ok')
+                return res.json()
+            })
+            .then((data) => {
+                if (mounted) setFaqData(data)
+            })
+            .catch((err) => {
+                console.error('Failed to fetch FAQs', err)
+                if (mounted) setError(err.message)
+            })
+            .finally(() => mounted && setLoading(false))
+
+        return () => {
+            mounted = false
+        }
+    }, [API_URL])
 
     return (
         <>
@@ -19,8 +38,11 @@ export default function Faq() {
                 <h2>Search by topic</h2>
             </section>
             <section className="faq-cards">
-                {faqData.map((item) => (
-                    <FaqCard question={item.question} answer={item.answer} />
+                {loading && <p>Loading...</p>}
+                {error && <p className="error">Error: {error}</p>}
+                {!loading && !error && faqData.length === 0 && <p>No FAQs found.</p>}
+                {!loading && !error && faqData.map((item) => (
+                    <FaqCard key={item.id} question={item.question} answer={item.answer} />
                 ))}
             </section>
         </>
