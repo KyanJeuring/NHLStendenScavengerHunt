@@ -4,18 +4,13 @@ import './navbar.css';
 import BurgerMenu from '../hamburger_menu/burgermenu';
 
 export default function Navbar() {
-
-    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-    const [menu_class, setMenuClass] = useState("menu hidden")
-    const [isMenuClicked, setIsMenuClicked] = useState(false) 
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const updateMenu = () => {
         if (!isMenuClicked) {
-            setBurgerClass("burger-bar clicked")
-            setMenuClass("menu visible")
+            setMenuOpen(true)
         } else {
-            setBurgerClass("burger-bar unclicked")
-            setMenuClass("menu hidden")
+            setMenuOpen(false)
         }
     }
 
@@ -30,7 +25,7 @@ export default function Navbar() {
                 <NavLink to="/learnMore" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Learn More</NavLink>
             </section>
            <div className="hamburger-menu">
-                <BurgerMenu />
+                <BurgerMenu onToggle={setMenuOpen} />
             </div>
         </nav>
     );

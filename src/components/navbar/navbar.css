@@ -15,29 +15,39 @@ nav {
 /* PHONE SCREEN */
 @media screen and (max-width: 600px) {
 
+    .burger-btn {
+        margin-top: 0.8rem;
+    }
+
     .nav-links {
         display: none;
+    }
+
+    .logo img {
+        height: 5rem;
     }
 }
 
 /* TABLET SCREEN */
 @media screen and (min-width: 600px) and (max-width : 990px) {
 
+    .burger-btn {
+        margin-top: 0.8rem;
+    }
+
     .nav-links {
         display: none;
     }
 
-    .hamburger {
-        stroke: white;
-        height: 4rem;
-        width: auto;
+    .logo img {
+        height: 5rem;
     }
 }
 
 /* LAPTOP AND DESKTOP SCREEN */
 @media screen and (min-width: 990px) {
 
-    .hamburger {
+    .hamburger-menu {
         display: none;
     }
 
