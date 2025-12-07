@@ -18,6 +18,10 @@ export default function Navbar() {
         setIsMenuClicked(!isMenuClicked);
     }
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    }
+
     return (
         <nav>
             <section className='logo'>
@@ -31,24 +35,24 @@ export default function Navbar() {
             </section>
 
            <div className="hamburger-menu">
-                <BurgerMenu onClick={updateMenu}/>
+                <BurgerMenu open={menuOpen} onClick={updateMenu}/>
             </div>
             
-            <div className="menu">
+            <div className={menuOpen ? "menu" : "hidden"}>
                 <div className="link">
-                    <NavLink to="/" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+                    <NavLink to="/" onClick={closeMenu} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
                     <svg className="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div className="link">
-                    <NavLink to="/faq" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>FAQ</NavLink>
+                    <NavLink to="/faq" onClick={closeMenu} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>FAQ</NavLink>
                     <svg className="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div className="link">
-                    <NavLink to="/learnMore" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Learn More</NavLink>
+                    <NavLink to="/learnMore" onClick={closeMenu} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>Learn More</NavLink>
                     <svg className="arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

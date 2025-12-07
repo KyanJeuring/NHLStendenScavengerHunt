@@ -43,13 +43,13 @@ nav {
     margin-right: 2rem;
 }
 
-.menuOpen {
-    display: inherit;
-}
-
-.menuHidden {
+.hidden {
     display: none;
 }
+
+/* .hidden {
+    display: none;
+} */
 
 /* PHONE SCREEN */
 @media screen and (max-width: 600px) {
