@@ -1,21 +1,40 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route , useLocation} from 'react-router-dom'
 import Home from './pages/home/Home'
+import Faq from './pages/faq/Faq'
 import Navbar from './components/navbar/Navbar'
 import LearnMore from './pages/learnMore/LearnMore'
-import Studylandscape from './pages/studylandscape/Studylandscape'
 
 export default function App() {
+  const routesWithNavbar = [
+    { path: "/", page: <Home /> },
+    { path: "/faq", page: <Faq /> }
+  ];
+
+  const routesWithoutNavbar = [
+    { path: "/learnMore", page: <LearnMore /> }
+  ];
+
+  const location = useLocation();
+  const showNavbar = routesWithNavbar.some(r => r.path === location.pathname);
+
+  const routeElements = [];
+
+  for (const r of routesWithNavbar) {
+    routeElements.push(<Route key={r.path} path={r.path} element={r.page} />);
+  }
+
+  for (const r of routesWithoutNavbar) {
+    routeElements.push(<Route key={r.path} path={r.path} element={r.page} />);
+  }
+
   return (
     <>
-      <Navbar/>
+      {showNavbar && <Navbar />}
+
       <main>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/learnMore" element={<LearnMore/>}/>
-          <Route path="/studylandscape" element={<Studylandscape/>}/>
-        </Routes>
+        <Routes>{routeElements}</Routes>
       </main>
     </>
-  )
+  );
 }
