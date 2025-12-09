@@ -1,8 +1,44 @@
 .faq-card {
     border-radius: 0.5rem;
+    font-size: 1.2rem;
     background-color: rgb(var(--nhl_stenden_corp_blue_20));
-    color: rgb(var(--nhl_stenden_corp_blue));
-    aspect-ratio: 4 / 2;
-    height: 25vh;
+    color: black;
+    width: 75vw;
     padding: 1.5rem;
+    min-height: 18vh;
+}
+
+.faq-card p {
+    margin-block: 0.5rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.faq-card .faq-question {
+    font-family: "CeraPro_Bold";
+}
+
+.faq-toggle {
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(var(--nhl_stenden_corp_blue));
+    user-select: none;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    border: none;
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.2s ease-in-out;
+}
+
+.faq-answer-inner {
+    overflow: hidden;
+}
+
+.faq-answer.open {
+    grid-template-rows: 1fr;
 }
