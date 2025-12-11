@@ -1,12 +1,14 @@
 .learnMorePage {
     background-color: rgb(--nhl_stenden_corp_blue);
-    display: flex;
-    justify-content: space-between;
-
 }
 
 .learnMoreHeader{
     margin-inline: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    font-size: 1.8rem;
 }
 
 .tagline {

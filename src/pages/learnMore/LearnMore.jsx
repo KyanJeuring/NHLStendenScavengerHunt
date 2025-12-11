@@ -1,17 +1,18 @@
 import React from 'react';
 import './learnMore.css';
 import LetsgoNav from '../../components/letsgonav/LetsgoNav';
-import LetsgoFooter from '../../components/letsgofooter/LetsgoFooter';
+
 
 export default function LearnMore() {
     return (
         <section className='learn-more-container'>
             <header className="learnMorePage">
                 <div className="learnMoreHeader">
-                    <img src="/logos/NHLStendenLogo_White.svg" alt="NHL Stenden Logo" className="logo_learnMore"/>
+                    
                     <h2 className="tagline">Let's go to...</h2>
-                </div>
                     <img src="/pixels/learnMoreSvgCombination.svg" alt="" className="whiteWaves"/>
+                </div>
+                    
             </header>
             <main className='lets-go-to-links'>
                 <LetsgoNav  
@@ -63,9 +64,7 @@ export default function LearnMore() {
                     link="/kennispoort"
                 />
             </main>
-            <footer>
-                  <LetsgoFooter />
-            </footer>
+           
         
 
         </section>
