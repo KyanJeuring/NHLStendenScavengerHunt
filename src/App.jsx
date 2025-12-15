@@ -11,6 +11,8 @@ import Library from './pages/library/Library'
 import StudentInfo from './pages/studentInfo/studentinfo'
 import MyConceptLab from './pages/myConceptLab/MyConceptLab'
 import Lockers from './pages/lockers/Lockers'
+import Studylandscapelogistics from './pages/studylandscapelogistics/Studylandscapelogistics'
+import Studylandscapeit from './pages/studylandscapeit/Studylandscapeit'
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
           <Route path="/student-info" element={<StudentInfo/>}/>
           <Route path="/myConceptLab" element={<MyConceptLab/>}/>
           <Route path="/lockers" element={<Lockers/>}/>
+          <Route path="/studylandscapelogistics" element={<Studylandscapelogistics/>}/>
+          <Route path="/studylandscapeit" element={<Studylandscapeit/>}/>
         </Routes>
       </main>
     </>
