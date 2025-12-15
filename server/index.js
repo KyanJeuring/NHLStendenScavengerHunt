@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/api/faq', async (req, res) => {
+app.get('/api/faq', async (_req, res) => {
   try {
     const result = await db.query('SELECT * FROM faq ORDER BY RANDOM() LIMIT 10');
     if (result.rows.length === 0) {
@@ -19,7 +19,7 @@ app.get('/api/faq', async (req, res) => {
   }
 });
 
-app.get('/api/explorer', async (req, res) => {
+app.get('/api/explorer', async (_req, res) => {
   try {
     const result = await db.query('SELECT * FROM explore_item');
     if (result.rows.length === 0) {
@@ -32,7 +32,7 @@ app.get('/api/explorer', async (req, res) => {
   }
 });
 
-app.get('/api/explorer/categories', async (req, res) => {
+app.get('/api/explorer/categories', async (_req, res) => {
   try {
     const result = await db.query("SELECT unnest(enum_range(NULL::category_enum)) AS category");
     if (result.rows.length === 0) {
@@ -45,7 +45,7 @@ app.get('/api/explorer/categories', async (req, res) => {
   }
 });
 
-app.get('/api/carousel', async (req, res) => {
+app.get('/api/carousel', async (_req, res) => {
   try {
     const result = await db.query('SELECT * FROM carousel_item ORDER BY RANDOM() LIMIT 15');
     if (result.rows.length === 0) {
