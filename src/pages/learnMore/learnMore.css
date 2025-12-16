@@ -1,9 +1,9 @@
-.learnMorePage {
+.learn-more-page {
     background-color: rgb(--nhl_stenden_corp_blue);
 }
 
-.learnMoreHeader{
-    margin-inline: 50px;
+.learn-more-header{
+    margin-left: 4.5rem;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -15,20 +15,20 @@
     color: white;
     
 }
-.learnMoreHeader .logo_learnMore {
+.learn-more-header .logo_learnMore {
     width: 150px;
     margin-block: 30px;
 }
 
-.learnMorePage .whiteWaves {
-    margin-left: 0;
+.learn-more-page .white-waves {
+    margin-right: 10rem;
 }
 
-.whiteWaves {
+.white-waves {
     height: 300px;
 }
 
-.learnMoreHeader .tagline{
+.learn-more-header .tagline{
     margin-top: 80px;
 }
 
@@ -38,11 +38,10 @@
 
 }
 
-.lets-go-to-links{
+.learn-more-links{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
     width: 100%;          /* let child use 100% */
-    margin-top: 2rem;     /* optional */
 }

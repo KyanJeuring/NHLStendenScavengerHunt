@@ -2,71 +2,79 @@ import React from 'react';
 import './learnMore.css';
 import LetsgoNav from '../../components/letsgonav/LetsgoNav';
 
-
 export default function LearnMore() {
     return (
         <section className='learn-more-container'>
-            <header className="learnMorePage">
-                <div className="learnMoreHeader">
-                    
-                    <h2 className="tagline">Let's go to...</h2>
-                    <img src="/pixels/learnMoreSvgCombination.svg" alt="" className="whiteWaves"/>
+            <header className="learn-more-page">
+                <div className="learn-more-header">
+                    <h2 className="tagline">Learn more about...</h2>
+                    <img src="/pixels/learn-more-svg-combination.svg" alt="NHL Stenden pixels combination" className="white-waves"/>
                 </div>
-                    
             </header>
-            <main className='lets-go-to-links'>
+            <main className='learn-more-links'>
                 <LetsgoNav  
-                    src="/icons/library_icon.svg" 
-                    location="Library" 
-                    description="Study resources & a quiet place." 
-                    link="/library"
+                    src="/icons/games-logo.svg" 
+                    location="Give your mind a break" 
+                    description="Play chess, ping pong or table football." 
+                    link="/timeToRelax"
                 />
 
                 <LetsgoNav  
-                    src="/icons/student_info_icon.svg" 
-                    location="Student Info" 
-                    description="Help & important information." 
-                    link="/student-info"
+                    src="/icons/camera-equipment.svg" 
+                    location="Need technical equipment?" 
+                    description="Cameras, microphones, tripods & more." 
+                    link="/studentInfoEquipment"
                 />
 
                 <LetsgoNav  
-                    src="/icons/canteen_icon.svg" 
-                    location="Canteen" 
-                    description="Food & beverages." 
-                    link="/canteen"
+                    src="/icons/emergency-icon.svg" 
+                    location="🚨Emergency🚨" 
+                    description="What to do when you hear a slow whoop sound?" 
+                    link="/emergencyProcedures"
                 />
 
                 <LetsgoNav  
-                    src="/icons/parking_icon.svg" 
-                    location="Parking & Bike Area" 
-                    description="Vehicle & bicycle parking." 
-                    link="/parking"
+                    src="/icons/store-icon.svg" 
+                    location="Campus Store" 
+                    description="You can buy some office supplies without leaving the building." 
+                    link="/silentPhoneBooths"
                 />
 
                 <LetsgoNav  
-                    src="/icons/lab_icon.svg" 
-                    location="MyConcept Lab" 
-                    description="Step in, get hands-on, and explore the future." 
-                    link="/myconcept-lab"
+                    src="/icons/rules-icon.svg" 
+                    location="Rules" 
+                    description="Read more about the rules on campus." 
+                    link="/rules"
                 />
 
                 <LetsgoNav  
-                    src="/icons/study_landscape_icon.svg" 
-                    location="Study Landscape" 
-                    description="Time to study!" 
-                    link="/study-landscape"
+                    src="/icons/studying-abroad-icon.svg" 
+                    location="Studying Abroad" 
+                    description="Discover opportunities to study in different countries." 
+                    link="/studyingAbroad"
                 />
 
                 <LetsgoNav  
-                    src="/icons/kennispoort_icon.svg" 
-                    location="Kennispoort" 
-                    description="Collaboration with real companies." 
-                    link="/kennispoort"
+                    src="/icons/restaurant-icon.svg" 
+                    location="Stones Restaurant" 
+                    description="Visit a restaurant which is ran by students." 
+                    link="/stonesRestaurant"
+                />
+
+                <LetsgoNav  
+                    src="/icons/lockers-icon.svg" 
+                    location="Lockers" 
+                    description="Leave your staff in a secure place." 
+                    link="/lockers"
+                />
+
+                <LetsgoNav  
+                    src="/icons/studying-icon.svg" 
+                    location="Overview of all courses" 
+                    description="Discover all the courses offered at NHL Stenden." 
+                    link="/coursesOverview"
                 />
             </main>
-           
-        
-
         </section>
     );
 }
