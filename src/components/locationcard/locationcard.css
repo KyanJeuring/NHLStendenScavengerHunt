@@ -12,3 +12,11 @@
     border-radius: 1rem;
     height: auto;
 }
+
+.location-card .more-info {
+    margin-top: 0.5rem;
+    color: rgb(var(--nhl_stenden_corp_blue));
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+}
