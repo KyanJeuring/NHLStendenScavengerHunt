@@ -2,7 +2,6 @@ import React from 'react';
 import './kennispoort.css';
 import { useNavigate } from 'react-router-dom';
 import TourGuide from '../../components/tourguide/TourGuide';
-
 export default function Kennispoort() {
     const navigate = useNavigate();
 
