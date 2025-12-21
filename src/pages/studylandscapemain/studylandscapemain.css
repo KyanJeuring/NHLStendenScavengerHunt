@@ -1,0 +1,72 @@
+.studylandscapePage-container-main {
+    padding: 0rem;
+}
+
+.studylandscape-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 0;
+}
+
+.pixelsCombination {
+    width: 25%;
+}
+
+.studylandscape-header-main > h1 {
+    font-size: 3rem;
+    margin-block: auto;
+    margin-inline: 3rem;
+}
+
+.techAndDesign {
+    width: 30%;
+}
+
+.studylandcape-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.studylandcape-main-content > h2 {
+    margin-right: 36.5rem;
+    margin-block: 4rem;
+    color: rgb(var(--nhl_stenden_corp_cyan));
+}
+
+.studylandcape-main-content > h3 {
+    margin-right: 37.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.studylandcape-main-content > p {
+    margin-left: 3rem;
+    margin-block: 1rem;
+}
+
+.buttonToNextPage {
+    display: flex;
+    justify-content: center;
+}
+
+.moveNext {
+    background-color: rgb(var(--nhl_stenden_corp_blue));
+    color: white;
+    margin: 2rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: 'CeraPro';
+}
+
+.moveNext:hover {
+    background-color: white;
+    border: 3px solid rgb(var(--nhl_stenden_corp_blue));
+    color: rgb(var(--nhl_stenden_corp_blue));
+    cursor: pointer;
+}

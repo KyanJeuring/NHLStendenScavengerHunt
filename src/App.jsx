@@ -5,6 +5,7 @@ import Navbar from './components/navbar/Navbar'
 import LearnMore from './pages/learnMore/LearnMore'
 import Studylandscapelogistics from './pages/studylandscapelogistics/Studylandscapelogistics'
 import Studylandscapeit from './pages/studylandscapeit/Studylandscapeit'
+import Studylandscapemain from './pages/studylandscapemain/Studylandscapemain'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/learnMore" element={<LearnMore/>}/>
           <Route path="/studylandscapelogistics" element={<Studylandscapelogistics/>}/>
           <Route path="/studylandscapeit" element={<Studylandscapeit/>}/>
+          <Route path="/studylandscapemain" element={<Studylandscapemain/>}/>
         </Routes>
       </main>
     </>
