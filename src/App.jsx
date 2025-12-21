@@ -5,13 +5,10 @@ import Explore from './pages/explore/Explore'
 import Faq from './pages/faq/Faq'
 import Navbar from './components/navbar/Navbar'
 import LearnMore from './pages/learnMore/LearnMore'
-<<<<<<< HEAD
 import Canteen from './pages/canteen/Canteen'
 import Kennispoort from './pages/kennispoort/Kennispoort'
 import Library from './pages/library/Library'
-=======
 import StudentInfo from './pages/studentInfo/studentinfo'
->>>>>>> studentInfo
 
 export default function App() {
   return (
@@ -22,14 +19,11 @@ export default function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/learnMore" element={<LearnMore/>}/>
-<<<<<<< HEAD
           <Route path="/explore" element={<Explore/>}/>
           <Route path="/canteen" element={<Canteen/>}/>
           <Route path="/kennispoort" element={<Kennispoort/>}/>
           <Route path="/library" element={<Library/>}/>
-=======
           <Route path="/student-info" element={<StudentInfo/>}/>
->>>>>>> studentInfo
         </Routes>
       </main>
     </>
