@@ -14,9 +14,7 @@ export default function MyConceptLab() {
                 <img src="https://lipsum.app/1920x1080" alt="MyConcept Lab" className="techAndDesign"/>
                 <h3>Welcome to MyConcept Lab</h3>
                 <p>MyConcept Lab is a location within the university.</p>
-                <ul>
-
-                </ul>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis illo, odio necessitatibus animi, inventore voluptate omnis cumque fugiat fuga laboriosam, officia deleniti? Sequi ut, nisi voluptatum ducimus a eveniet consectetur?</p>
             </main>
             <div className="buttonToNextPage">                
                 <button onClick={() => navigate('/learnMore')} className="moveNext">Move Next</button>

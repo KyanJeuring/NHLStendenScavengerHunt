@@ -6,6 +6,7 @@ import Faq from './pages/faq/Faq'
 import Navbar from './components/navbar/Navbar'
 import LearnMore from './pages/learnMore/LearnMore'
 import Kennispoort from './pages/kennispoort/Kennispoort'
+import MyConceptLab from './pages/myConceptLab/MyConceptLab'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/learnMore" element={<LearnMore/>}/>
           <Route path="/explore" element={<Explore/>}/>
           <Route path="/kennispoort" element={<Kennispoort/>}/>
+          <Route path="/myConceptLab" element={<MyConceptLab/>}/>
         </Routes>
       </main>
     </>
